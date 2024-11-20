@@ -51,13 +51,21 @@ Full Subractor
 **Procedure**
 
 1.Open Quartus Software
+
 2.Create a New Project
+
 3.Create a New Design File
+
 4.Compile the Program 
+
 5.Generate RTL Schematic 
+
 6.Create Nodes for Inputs/Outputs
+
 7.Generate Timing Diagram 
-8.Simulate Different Input Combinations 
+
+8.Simulate Different Input Combinations
+
 9.Save Your Work
 
 
@@ -66,19 +74,29 @@ Full Subractor
 Full Adder
 
 module Exp4(a,b,cin,sum,carry);
+
 input a,b,cin;
+
 output sum,carry;
+
 assign sum=(a^b^cin);
+
 assign carry=((a&b) | (b&cin) | (cin&a));
+
 endmodule
 
 Full Subractor
 
 module exp42(a,b,bin,borr,diff);
+
 input a,b,bin;
+
 output borr,diff;
+
 assign diff=(a^b^bin);
+
 assign borr=((~a&b) | (b&bin) | (bin&~a));
+
 endmodule
 
 
